@@ -14,6 +14,9 @@ importers:
       '@ai-sdk/openai':
         specifier: ^1.0.11
         version: 1.0.11(zod@3.24.1)
+      '@alloralabs/allora-sdk':
+        specifier: ^0.1.0
+        version: 0.1.0
       '@bonfida/spl-name-service':
         specifier: ^3.0.7
         version: 3.0.7(@solana/web3.js@1.98.0(bufferutil@4.0.9)(utf-8-validate@5.0.10))(bufferutil@4.0.9)(fastestsmallesttextencoderdecoder@1.0.22)(typescript@5.7.2)(utf-8-validate@5.0.10)
@@ -231,6 +234,10 @@ packages:
     peerDependenciesMeta:
       zod:
         optional: true
+
+  '@alloralabs/allora-sdk@0.1.0':
+    resolution: {integrity: sha512-jVCIx+PXOrklDf4TU27DCuf0Nri2+s+hhDGMP/s8CHUY6eSaL8G3S0E1L1vP+sF6gIjzCdV7P68QtRB0ym5vNQ==}
+    engines: {node: '>=18'}
 
   '@aptos-labs/aptos-cli@1.0.2':
     resolution: {integrity: sha512-PYPsd0Kk3ynkxNfe3S4fanI3DiUICCoh4ibQderbvjPFL5A0oK6F4lPEO2t0MDsQySTk2t4vh99Xjy6Bd9y+aQ==}
@@ -4849,6 +4856,11 @@ snapshots:
       zod-to-json-schema: 3.24.1(zod@3.24.1)
     optionalDependencies:
       zod: 3.24.1
+
+  '@alloralabs/allora-sdk@0.1.0':
+    dependencies:
+      '@types/node': 22.10.7
+      typescript: 5.7.2
 
   '@aptos-labs/aptos-cli@1.0.2':
     dependencies:

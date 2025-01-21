@@ -27,3 +27,4 @@ export * from "./squads";
 export * from "./meteora";
 export * from "./helius";
 export * from "./voltr";
+export * from "./allora";
