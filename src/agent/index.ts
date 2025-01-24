@@ -718,6 +718,7 @@ export class SolanaAgentKit {
   async create3LandCollection(
     collectionOpts: CreateCollectionOptions,
     isDevnet: boolean = false,
+    priorityFeeParam?: number,
   ): Promise<string> {
     const optionsWithBase58: StoreInitOptions = {
       privateKey: this.wallet.secretKey,
@@ -728,7 +729,11 @@ export class SolanaAgentKit {
       optionsWithBase58.isMainnet = true;
     }
 
-    const tx = await createCollection(optionsWithBase58, collectionOpts);
+    const tx = await createCollection(
+      optionsWithBase58,
+      collectionOpts,
+      priorityFeeParam,
+    );
     return `Transaction: ${tx}`;
   }
 
@@ -737,6 +742,7 @@ export class SolanaAgentKit {
     createItemOptions: CreateSingleOptions,
     isDevnet: boolean = false,
     withPool: boolean = false,
+    priorityFeeParam?: number,
   ): Promise<string> {
     const optionsWithBase58: StoreInitOptions = {
       privateKey: this.wallet.secretKey,
@@ -753,6 +759,7 @@ export class SolanaAgentKit {
       createItemOptions,
       !isDevnet,
       withPool,
+      priorityFeeParam,
     );
     return `Transaction: ${tx}`;
   }

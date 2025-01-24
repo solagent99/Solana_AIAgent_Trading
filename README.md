@@ -134,7 +134,8 @@ console.log("Token Mint Address:", result.mint.toString());
 ```
 ### Create NFT Collection on 3Land
 ```typescript
-const isDevnet = true; // (Optional) if not present TX takes place in Mainnet
+const isDevnet = false; // (Optional) if not present TX takes place in Mainnet
+const priorityFeeParam = 1000000; // (Optional) if not present the default priority fee will be 50000
 
  const collectionOpts: CreateCollectionOptions = {
     collectionName: "",
@@ -146,6 +147,7 @@ const isDevnet = true; // (Optional) if not present TX takes place in Mainnet
 const result = await agent.create3LandCollection(
       collectionOpts,
       isDevnet, // (Optional) if not present TX takes place in Mainnet
+      priorityFeeParam, //(Optional)
     );
 ```
 
@@ -154,6 +156,7 @@ When creating an NFT using 3Land's tool, it automatically goes for sale on 3.lan
 ```typescript
 const isDevnet = true; // (Optional) if not present TX takes place in Mainnet
 const withPool = true; // (Optional) only present if NFT will be created with a Liquidity Pool for a specific SPL token
+const priorityFeeParam = 1000000; // (Optional) if not present the default priority fee will be 50000
 const collectionAccount = ""; //hash for the collection
 const createItemOptions: CreateSingleOptions = {
   itemName: "",
@@ -174,6 +177,7 @@ const result = await agent.create3LandNft(
   createItemOptions,
   isDevnet, // (Optional) if not present TX takes place in Mainnet
   withPool
+  priorityFeeParam, //(Optional)
 );
 
 ```
