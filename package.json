@@ -31,6 +31,7 @@
   "dependencies": {
     "@3land/listings-sdk": "^0.0.7",
     "@ai-sdk/openai": "^1.0.11",
+    "@alloralabs/allora-sdk": "^0.1.0",
     "@bonfida/spl-name-service": "^3.0.7",
     "@cks-systems/manifest-sdk": "0.1.59",
     "@coral-xyz/anchor": "0.29",

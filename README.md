@@ -508,6 +508,29 @@ const signature = await agent.voltrWithdrawStrategy(
 const asset = await agent.getAsset("41Y8C4oxk4zgJT1KXyQr35UhZcfsp5mP86Z2G7UUzojU")
 ```
 
+### Get a price inference from Allora
+
+Get the price for a given token and timeframe from Allora's API
+
+```typescript
+const sol5mPrice = await agent.getPriceInference("SOL", "5m");
+console.log("5m price inference of SOL/USD:", sol5mPrice);
+```
+
+### List all topics from Allora
+
+```typescript
+const topics = await agent.getAllTopics();
+console.log("Allora topics:", topics);
+```
+
+### Get an inference for an specific topic from Allora
+
+```typescript
+const inference = await agent.getInferenceByTopicId(42);
+console.log("Allora inference for topic 42:", inference);
+```
+
 ## Examples
 
 ### LangGraph Multi-Agent System
