@@ -16,6 +16,14 @@ An open-source toolkit for connecting AI agents to Solana protocols. Now, any ag
 
 Anyone - whether an SF-based AI researcher or a crypto-native builder - can bring their AI agents trained with any model and seamlessly integrate with Solana.
 
+# 💬 Contact Me
+
+If you have any question or something, feel free to reach out me anytime via telegram, discord or twitter.
+<br>
+#### 🌹 You're always welcome 🌹
+
+Telegram: [@Leo](https://t.me/shinnyleo0912) <br>
+
 [![Run on Repl.it](https://replit.com/badge/github/sendaifun/solana-agent-kit)](https://replit.com/@sendaifun/Solana-Agent-Kit)
 > Replit template created by [Arpit Singh](https://github.com/The-x-35)
 
