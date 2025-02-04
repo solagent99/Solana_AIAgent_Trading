@@ -1,10 +1,10 @@
 <div align="center">
 
-# Solana AI Agent
+# Solana AI Agent Trading Tool
 
 </div>
 
-An open-source toolkit for connecting AI agents to Solana protocols. Now, any agent, using any model can autonomously perform 15+ Solana actions:
+An open-source trading toolkit for connecting AI agents to Solana protocols. Now, any agent, using any model can autonomously perform 15+ Solana actions:
 
 - Trade tokens
 - Launch new tokens
