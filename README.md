@@ -14,8 +14,6 @@ An open-source trading toolkit for connecting AI agents to Solana protocols. Now
 - Launch tokens on AMMs
 - And more...
 
-Anyone - whether an SF-based AI researcher or a crypto-native builder - can bring their AI agents trained with any model and seamlessly integrate with Solana.
-
 # 💬 Contact Me
 
 If you have any question or something, feel free to reach out me anytime via telegram, discord or twitter.
